@@ -1,0 +1,176 @@
+@charset "utf-8";
+
+body{
+    background-color: #f2f2f2;
+}
+.space{
+    height: 200px;
+}
+.whatsmcb{
+    margin: 0;
+}
+#back{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    z-index: -1; /* 他の要素よりも背面に配置 */
+}
+#mypage_header{
+    width: 100%;
+    position: fixed;
+    z-index: 3; /* 他の要素よりも背面に配置 */
+}
+.mypagehead{
+    background-color: #0F1035;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+#menu{
+    /* margin-top: 80px; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#menu .menubutton{
+    display: inline-flex;
+    width: 130px;
+    top: 80px;
+    height: 50px;
+    background-color: #9AC5F4;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    box-shadow: 3px 3px 3px 3px #555;
+    z-index: 3;
+    border-radius: 5px; /* 角丸 */
+    color: #fff;
+    text-decoration: none; /* 下線を非表示にする */
+}
+.personal{
+    margin-top: 120px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    height: 100%;
+}
+.left{
+    width: 40%;
+    height: 100%;
+}
+.haikei{
+    background-color: rgba(255, 255, 255, 0.7); /* 白色で透過率50% */
+    border-radius: 5px; /* 角丸 */
+    /* display: inline-flex; */
+    z-index: 1; /* 追加 */
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+.obi_left{
+    background-color: #0F1035;
+    color: #fff;
+    padding-left: 30px;
+    /* margin-left: 50px; */
+    height: 45px;
+    align-items: center;
+    width: 100%;
+    margin-top: 0;
+    display: inline-flex;
+    
+}
+#smb_left{
+    width: 100%;
+}
+#keireki{
+    /* display: inline-flex; */
+    align-items: center;
+    width: 60%;
+    margin-left: 40px;
+    height: 100%;
+    flex-direction: column; /* 子要素を縦に並べる */
+}
+.obi{
+    background-color: #0F1035;
+    color: #fff;
+    padding-left: 30px;
+    /* margin-left: 50px; */
+    height: 45px;
+    align-items: center;
+    margin-top: 0;
+    width: 100%;
+    display: inline-flex;
+    
+}
+.haikei2{
+    background-color: rgba(255, 255, 255, 0.7); /* 白色で透過率50% */
+    border-radius: 5px; /* 角丸 */
+    width: 100%;
+    height: 390px;
+    /* display: flex; */
+    /* overflow-y: scroll; */
+}
+.table_container{
+    max-height: 200px; /* テーブルの最大高さ */
+    overflow-y: auto; /* 垂直方向のスクロールが必要な場合にスクロールバーを表示 */
+    padding-top: 0;
+}
+#keirekitable, #smbatable, #smbqtable, #usertable{
+    width: 100%;
+    border-collapse: collapse;
+}
+#keirekitable thead, #smbatable thead, #smbqtable thead, #usertable thead{
+    background-color: #9AC5F4;
+    border-collapse: collapse;/* セル間の仕切り線を結合する */
+    /* border: 1px solid #9AC5F4;  */
+    background-color: #9AC5F4; /* ヘッダーの背景色 */
+    position: sticky;
+    top: 0; /* ヘッダーを画面の上部に固定 */
+}
+tbody{
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* セルの下部に境界線を追加 */
+    background-color: rgba(255, 255, 255, 0.7); /* 白色で透過率50% */
+    border-radius: 5px; /* 角丸 */
+}
+#kaitou_smb{
+    margin-left: 50px;
+    margin-right: 50px;
+    /* display: flex; */
+    height: 400px;
+}
+#menu .menubutton{
+    display: inline-flex;
+    width: 130px;
+    top: 80px;
+    height: 50px;
+    background-color: #9AC5F4;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    box-shadow: 3px 3px 3px 3px #555;
+    z-index: 3;
+    border-radius: 5px; /* 角丸 */
+    color: #fff;
+    text-decoration: none; /* 下線を非表示にする */
+}
+.k_menubutton{
+    display: inline-flex;
+    width: 150px;
+    top: 80px;
+    height: 50px;
+    background-color: #9AC5F4;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    box-shadow: 3px 3px 3px 3px #555;
+    z-index: 3;
+    border-radius: 5px; /* 角丸 */
+    color: #fff;
+    text-decoration: none; /* 下線を非表示にする */
+}
